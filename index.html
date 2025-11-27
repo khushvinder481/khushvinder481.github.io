@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>    
+<head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Kalyan Ashram-Gurgaon - Social NGO</title>
+<title>Vansawasi Kalyan Ashram - Social NGO</title>
 <style>
     body{font-family:Arial, sans-serif;margin:0;padding:0;background:#f4f4f4;color:#333;}
     header{background:#0b6623;color:white;padding:20px;text-align:center;}
-    nav{background:#084c1e;padding:10px;text-align:center;}
+    nav{background:#084c1e;padding:10px;text-align:center;position:sticky;top:0;z-index:10;}
     nav a{color:white;text-decoration:none;padding:10px 20px;display:inline-block;}
     nav a:hover{background:#0b6623;}
-    .hero{background:url('https://www.google.com/url?sa=i&url=https%3A%2F%2Fkalyanashram.org%2Fabout-us%2F&psig=AOvVaw1W1AL6GeF2X-nfQa7rMtt7&ust=1764308982985000&source=images&cd=vfe&opi=89978449&ved=0CBUQjRxqFwoTCPidtqvRkZEDFQAAAAAdAAAAABAE');
+    .hero{background:url('https://images.unsplash.com/photo-1509099836639-18ba1795216d?auto=format&fit=crop&w=1200&q=60');
     background-size:cover;color:white;padding:120px 20px;text-align:center;}
     section{padding:40px;}
     .container{max-width:1000px;margin:auto;}
     h2{text-align:center;color:#0b6623;}
-    .activities, .donors, .branches{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px;}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px;}
     .card{background:white;padding:20px;border-radius:8px;box-shadow:0 2px 5px rgba(0,0,0,0.2);}
     footer{background:#084c1e;color:white;text-align:center;padding:20px;margin-top:40px;}
 </style>
@@ -23,16 +23,17 @@
 <body>
 
 <header>
-    <h1>Kalyan Ashram-Gurgaon</h1>
+    <h1>Vansawasi Kalyan Ashram</h1>
     <p>Serving Tribal Communities • Education • Health • Empowerment</p>
 </header>
 
+<!-- TOP MENU -->
 <nav>
     <a href="#about">About</a>
-    <a href="#activities">Activities</a>
-    <a href="#donors">Donors</a>
-    <a href="#branches">Branches</a>
-    <a href="#team">Team</a>
+    <a href="#whatwedo">What We Do</a>
+    <a href="#wherewework">Where We Work</a>
+    <a href="gallery/index.html">Gallery</a>
+    <a href="hindi.html">हिंदी</a>
 </nav>
 
 <div class="hero">
@@ -42,112 +43,35 @@
 
 <section id="about">
 <div class="container">
-<h2>About Our NGO</h2>
+<h2>About Us</h2>
 <p>
-Vansawasi Kalyan Ashram is a social organization dedicated to the welfare and upliftment of 
-tribal (Adivasi) communities across rural and remote regions. 
-Our mission is to provide better **education, healthcare, livelihood training, women empowerment, 
-environment conservation**, and preserve tribal cultural heritage.
+Vansawasi Kalyan Ashram is a dedicated NGO working for the upliftment of tribal communities.
+Our focus is on education, health programs, youth development, environmental protection,
+and preserving indigenous culture.
 </p>
-
-<p>
-Established with the vision of creating opportunities for tribal families, 
-we work through community volunteers, local branches, and development programs 
-to improve the quality of life while respecting indigenous identity.
-</p>
-
-<img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.facebook.com%2Fvanwasikalyanashramhisar%2F&psig=AOvVaw1W1AL6GeF2X-nfQa7rMtt7&ust=1764308982985000&source=images&cd=vfe&opi=89978449&ved=0CBUQjRxqFwoTCPidtqvRkZEDFQAAAAAdAAAAABAM" 
-style="width:100%;border-radius:10px;margin-top:20px;">
 </div>
 </section>
 
-<section id="activities">
+<section id="whatwedo">
 <div class="container">
-<h2>Our Major Activities</h2>
-<div class="activities">
-
-<div class="card">
-    <h3>📚 Education Support</h3>
-    <p>Scholarships, hostels, tribal schools, stationary support, digital classes.</p>
-</div>
-
-<div class="card">
-    <h3>🏥 Health & Wellness Camps</h3>
-    <p>Medical checkups, vaccination camps, nutrition programs for children & women.</p>
-</div>
-
-<div class="card">
-    <h3>🌱 Environment Conservation</h3>
-    <p>Tree plantation, forest protection awareness, clean village movement.</p>
-</div>
-
-<div class="card">
-    <h3>👩‍🦱 Women Empowerment</h3>
-    <p>Self-help groups, skill development, handicraft training.</p>
-</div>
-
-<div class="card">
-    <h3>💼 Employment & Skill Training</h3>
-    <p>Vocational training, village entrepreneurship, youth leadership programs.</p>
-</div>
-
+<h2>What We Do</h2>
+<div class="grid">
+<div class="card"><h3>Education</h3><p>Scholarships, hostels, coaching centers.</p></div>
+<div class="card"><h3>Health</h3><p>Medical camps, nutrition support, rural health services.</p></div>
+<div class="card"><h3>Livelihood</h3><p>Skill training, women empowerment programs.</p></div>
+<div class="card"><h3>Environment</h3><p>Tree plantation & awareness campaigns.</p></div>
 </div>
 </div>
 </section>
 
-<section id="donors">
+<section id="wherewework">
 <div class="container">
-<h2>Major Donors</h2>
-<div class="donors">
-
-<div class="card"><h3>🙏 Shri Ramesh Patel</h3><p>Education Fund Donor</p></div>
-<div class="card"><h3>🙏 Sunlight Foundation</h3><p>Health & Medicine Support</p></div>
-<div class="card"><h3>🙏 Mehta Charitable Trust</h3><p>Hostel Development Donor</p></div>
-<div class="card"><h3>🙏 Corporate CSR Group</h3><p>Skill Training Program</p></div>
-
-</div>
-</div>
-</section>
-
-<section id="branches">
-<div class="container">
-<h2>Our Branches</h2>
-<div class="branches">
-
-<div class="card"><h3>📍 Madhya Pradesh</h3><p>Regional Office – Mandla</p></div>
-<div class="card"><h3>📍 Maharashtra</h3><p>Gondia & Gadchiroli Units</p></div>
-<div class="card"><h3>📍 Chhattisgarh</h3><p>Jagdalpur & Surguja</p></div>
-<div class="card"><h3>📍 Rajasthan</h3><p>Udaipur Tribal Belt</p></div>
-
-</div>
-</div>
-</section>
-
-<section id="team">
-<div class="container">
-<h2>Activity Heads & Team</h2>
-<div class="activities">
-
-<div class="card">
-    <h3>👤 Shri Mahesh Singh</h3>
-    <p>National Activity Head</p>
-</div>
-
-<div class="card">
-    <h3>👤 Smt. Kavita Devi</h3>
-    <p>Women Empowerment Coordinator</p>
-</div>
-
-<div class="card">
-    <h3>👤 Shri Rohit Verma</h3>
-    <p>Health & Medical Camp Leader</p>
-</div>
-
-<div class="card">
-    <h3>👤 Vivek Adivasi Youth Group</h3>
-    <p>Tribal Youth Development Team</p>
-</div>
-
+<h2>Where We Work</h2>
+<div class="grid">
+<div class="card"><h3>Madhya Pradesh</h3><p>Mandla, Balaghat, Dindori</p></div>
+<div class="card"><h3>Maharashtra</h3><p>Gondia, Gadchiroli</p></div>
+<div class="card"><h3>Chhattisgarh</h3><p>Bastar, Surguja</p></div>
+<div class="card"><h3>Rajasthan</h3><p>Udaipur, Banswara</p></div>
 </div>
 </div>
 </section>
