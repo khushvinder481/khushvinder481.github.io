@@ -5,48 +5,116 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Kalyan Ashram Gurgaon - Social NGO</title>
 <style>
-body{font-family:Arial, sans-serif;margin:0;padding:0;background:#f4f4f4;color:#333;}
-header{background:#0b6623;color:white;padding:10px;display:flex;align-items:center;justify-content:center;gap:15px;}
-header img{height:60px;}
-nav{background:#084c1e;padding:10px;text-align:center;position:sticky;top:0;z-index:10;}
-nav a{color:white;text-decoration:none;padding:10px 20px;display:inline-block;}
-nav a:hover{background:#0b6623;}
-.hero{
-    position:relative;
-    height:400px;
-    overflow:hidden;
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+    color: #333;
 }
-.hero img{
-    width:100%;
-    height:400px;
-    object-fit:cover;
-    animation: slider 12s infinite;
-    position:absolute;
-    top:0; left:0;
+
+/* Header */
+header {
+    background: #0b6623;
+    color: white;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
 }
-.hero h1, .hero p{
-    position:absolute; top:50%; left:50%; transform:translate(-50%,-50%);
-    color:white; text-align:center; text-shadow:2px 2px 5px #000;
+
+header img {
+    height: 60px;
 }
-@keyframes slider{
-    0%,25%{opacity:1;}
-    30%,100%{opacity:0;}
+
+/* Navigation */
+nav {
+    background: #084c1e;
+    padding: 10px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 10;
 }
-section{padding:40px;}
-.container{max-width:1000px;margin:auto;}
-h2{text-align:center;color:#0b6623;}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px;}
-.card{background:white;padding:20px;border-radius:8px;box-shadow:0 2px 5px rgba(0,0,0,0.2);}
-footer{background:#084c1e;color:white;text-align:center;padding:20px;margin-top:40px;}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: inline-block;
+}
+
+nav a:hover {
+    background: #0b6623;
+}
+
+/* HERO SECTION - Fixed Background */
+.hero {
+    height: 400px;
+    background: url('image/download.jpg') no-repeat center center fixed;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    text-shadow: 2px 2px 5px #000;
+}
+
+.hero h1, .hero p {
+    margin: 0;
+}
+
+/* Sections */
+section {
+    padding: 40px;
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+}
+
+h2 {
+    text-align: center;
+    color: #0b6623;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+/* Footer */
+footer {
+    background: #084c1e;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
 </style>
 </head>
 <body>
 
+<!-- HEADER -->
 <header>
     <img src="image/kalyanAshram_logo.png" alt="Logo">
     <h1>Kalyan Ashram Gurgaon</h1>
 </header>
-  
+
 <!-- NAVIGATION -->
 <nav>
     <a href="#about">About</a>
@@ -58,19 +126,13 @@ footer{background:#084c1e;color:white;text-align:center;padding:20px;margin-top:
     <a href="hindi.html">हिंदी</a>
 </nav>
 
-<!-- HERO SLIDER -->
+<!-- HERO SECTION -->
 <div class="hero">
-    <img src="image/download.jpg" alt="Slide 1">
-    <img src="image/download(1).jpg" alt="Slide 2">
-    <img src="image/download(2).jpg" alt="Slide 3">
-     <img src="image/1.jpeg" alt="Slide 4">
-     <img src="image/2.jpeg" alt="Slide 5">
-     <img src="image/3.jpeg" alt="Slide 6">
-    
     <h1>Empowering Tribal Communities Across India</h1>
     <p>Working for education, healthcare, employment & cultural upliftment</p>
 </div>
 
+<!-- ABOUT SECTION -->
 <section id="about">
 <div class="container">
 <h2>About Us</h2>
@@ -82,6 +144,7 @@ and preserving indigenous culture.
 </div>
 </section>
 
+<!-- WHAT WE DO SECTION -->
 <section id="whatwedo">
 <div class="container">
 <h2>What We Do</h2>
@@ -94,6 +157,7 @@ and preserving indigenous culture.
 </div>
 </section>
 
+<!-- WHERE WE WORK SECTION -->
 <section id="wherewework">
 <div class="container">
 <h2>Where We Work</h2>
@@ -106,6 +170,7 @@ and preserving indigenous culture.
 </div>
 </section>
 
+<!-- FOOTER -->
 <footer>
     <p>© 2025 Vansawasi Kalyan Ashram | All Rights Reserved</p>
 </footer>
