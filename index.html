@@ -1,41 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>  
+<head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Vansawasi Kalyan Ashram - Social NGO</title>
+<title>Kalyan Ashram Gurgaon - Social NGO</title>
 <style>
-    body{font-family:Arial, sans-serif;margin:0;padding:0;background:#f4f4f4;color:#333;}
-    header{
-        background:#0b6623;
-        color:white;
-        padding:10px;
-        text-align:center;
-        display:flex;
-        align-items:center;
-        justify-content:center;
-        gap:15px;
-    }
-    header img{
-        height:60px;
-    }
-    nav{background:#084c1e;padding:10px;text-align:center;position:sticky;top:0;z-index:10;}
-    nav a{color:white;text-decoration:none;padding:10px 20px;display:inline-block;}
-    nav a:hover{background:#0b6623;}
-    .hero{
-        background:url('image/download.jpg');
-        background-size:cover;
-        background-position:center;
-        color:white;
-        padding:120px 20px;
-        text-align:center;
-    }
-    section{padding:40px;}
-    .container{max-width:1000px;margin:auto;}
-    h2{text-align:center;color:#0b6623;}
-    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px;}
-    .card{background:white;padding:20px;border-radius:8px;box-shadow:0 2px 5px rgba(0,0,0,0.2);}
-    footer{background:#084c1e;color:white;text-align:center;padding:20px;margin-top:40px;}
+body{font-family:Arial, sans-serif;margin:0;padding:0;background:#f4f4f4;color:#333;}
+header{background:#0b6623;color:white;padding:10px;display:flex;align-items:center;justify-content:center;gap:15px;}
+header img{height:60px;}
+nav{background:#084c1e;padding:10px;text-align:center;position:sticky;top:0;z-index:10;}
+nav a{color:white;text-decoration:none;padding:10px 20px;display:inline-block;}
+nav a:hover{background:#0b6623;}
+.hero{
+    position:relative;
+    height:400px;
+    overflow:hidden;
+}
+.hero img{
+    width:100%;
+    height:400px;
+    object-fit:cover;
+    animation: slider 12s infinite;
+    position:absolute;
+    top:0; left:0;
+}
+.hero h1, .hero p{
+    position:absolute; top:50%; left:50%; transform:translate(-50%,-50%);
+    color:white; text-align:center; text-shadow:2px 2px 5px #000;
+}
+@keyframes slider{
+    0%,25%{opacity:1;}
+    30%,100%{opacity:0;}
+}
+section{padding:40px;}
+.container{max-width:1000px;margin:auto;}
+h2{text-align:center;color:#0b6623;}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px;}
+.card{background:white;padding:20px;border-radius:8px;box-shadow:0 2px 5px rgba(0,0,0,0.2);}
+footer{background:#084c1e;color:white;text-align:center;padding:20px;margin-top:40px;}
 </style>
 </head>
 <body>
@@ -45,18 +47,24 @@
     <h1>Vansawasi Kalyan Ashram</h1>
 </header>
 
-<!-- TOP MENU -->
+<!-- NAVIGATION -->
 <nav>
     <a href="#about">About</a>
     <a href="#whatwedo">What We Do</a>
     <a href="#wherewework">Where We Work</a>
     <a href="gallery/index.html">Gallery</a>
+    <a href="donate.html">Donate</a>
+    <a href="contact.html">Contact</a>
     <a href="hindi.html">हिंदी</a>
 </nav>
 
+<!-- HERO SLIDER -->
 <div class="hero">
+    <img src="image/download.jpg" alt="Slide 1">
+    <img src="image/download(1).jpg" alt="Slide 2">
+    <img src="image/download(2).jpg" alt="Slide 3">
     <h1>Empowering Tribal Communities Across India</h1>
-    <p>Working for education, healthcare, employment & cultural upliftment.</p>
+    <p>Working for education, healthcare, employment & cultural upliftment</p>
 </div>
 
 <section id="about">
