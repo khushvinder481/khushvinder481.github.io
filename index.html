@@ -129,6 +129,62 @@ footer {
     </ul>
 </nav>
 
+<style>
+    nav {
+        background: #0077cc;
+        padding: 10px;
+    }
+
+    nav .menu {
+        list-style: none;
+        display: flex;
+        gap: 20px;
+        margin: 0;
+        padding: 0;
+    }
+
+    nav .menu li {
+        position: relative;
+    }
+
+    nav a {
+        color: white;
+        text-decoration: none;
+        padding: 8px 12px;
+        display: block;
+        font-weight: 600;
+        font-family: Arial, sans-serif;
+    }
+
+    /* Dropdown hidden by default */
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        top: 40px;
+        left: 0;
+        background: #fff;
+        min-width: 180px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        border-radius: 4px;
+        z-index: 10;
+    }
+
+    .dropdown-content li a {
+        color: #333;
+        padding: 10px;
+    }
+
+    .dropdown-content li a:hover {
+        background: #f0f0f0;
+    }
+
+    /* Show dropdown when hovering */
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+</style>
+
+
 
 
 <!-- HERO SECTION -->
