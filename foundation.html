@@ -10,63 +10,87 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background: linear-gradient(to right, #e0f7fa, #ffffff);
-            color: #333;
+            background: linear-gradient(to right, #1b1b2f, #162447);
+            color: #f0f0f0;
             line-height: 1.7;
         }
 
         .container {
-            max-width: 900px;
+            max-width: 1000px;
             margin: 50px auto;
-            background: #fff;
-            padding: 30px;
-            border-radius: 12px;
-            box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+            padding: 20px;
         }
 
         h1 {
             text-align: center;
-            color: #0077cc;
+            color: #ffcc00;
+            margin-bottom: 40px;
+            text-shadow: 1px 1px 5px #000;
+        }
+
+        .member-card {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 25px;
             margin-bottom: 30px;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+            display: flex;
+            gap: 25px;
+            align-items: flex-start;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
-        .photo {
-            text-align: center;
-            margin-bottom: 20px;
+        .member-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 25px rgba(0,0,0,0.7);
         }
 
-        .photo img {
-            width: 200px;
-            height: 200px;
+        .member-photo {
+            width: 180px;
+            height: 180px;
             border-radius: 50%;
             object-fit: cover;
-            border: 4px solid #0077cc;
+            border: 3px solid #ffcc00;
         }
 
-        p {
-            font-size: 18px;
-            margin: 15px 0;
+        .member-info {
+            flex: 1;
         }
 
-        .highlight {
+        .member-name {
+            font-size: 22px;
             font-weight: bold;
-            color: #004a99;
+            color: #ffcc00;
+        }
+
+        .member-title {
+            font-size: 18px;
+            color: #00bcd4;
+            margin-top: 5px;
+        }
+
+        .member-description {
+            font-size: 16px;
+            color: #e0e0e0;
+            margin-top: 10px;
         }
 
         a.back {
             display: block;
             text-align: center;
             margin-top: 30px;
-            padding: 12px 20px;
-            background: #0077cc;
-            color: white;
+            padding: 12px 25px;
+            background: #ffcc00;
+            color: #1b1b2f;
             text-decoration: none;
             border-radius: 6px;
             font-size: 18px;
+            font-weight: bold;
+            transition: 0.3s ease;
         }
 
         a.back:hover {
-            background: #005fa3;
+            background: #e6b800;
         }
 
     </style>
@@ -75,31 +99,63 @@
 
 <div class="container">
 
-    <h1>श्री बालासाहब देशपांडे</h1>
+    <h1>Vanvasi Kalyan Ashram - Founders & Early Leaders</h1>
 
-    <div class="photo">
-        <img src="images/balasahab.jpg" alt="Shri Balasahab Deshpande">
+    <!-- Shri Balasahab Deshpande -->
+    <div class="member-card">
+        <img src="image/balasahab.jpg" alt="Shri Balasahab Deshpande" class="member-photo">
+        <div class="member-info">
+            <div class="member-name">श्री बालासाहब देशपांडे</div>
+            <div class="member-title">Shri Balasahab Deshpande</div>
+            <div class="member-description">
+                श्री रमाकांत केशव उर्फ़ बालासाहब देशपांडे का जन्म 26 दिसंबर 1913 को अमरावती नगरी में हुआ। 
+                उनके पिताजी का नाम केशवराव देशपांडे एवं माताजी का नाम लक्ष्मीबाई था। 
+                सन 1935 में नागपुर के हिस्लोप कॉलेज से बी.ए., 1937 में एल.एल.बी और 1939 में अर्थशास्त्र में एम.ए. की पढ़ाई पूरी की। 
+                1942 के गाँधी जी के आवाहन पर ‘छोड़ो भारत’ आन्दोलन में रामटेक में सक्रिय भूमिका निभाई। 
+                परिणामतः अंग्रेज सरकार ने बालासाहब को छह महीनों के लिए कारावास में भेजा।
+            </div>
+        </div>
     </div>
 
-    <p>
-        Ever since the establishment of <span class="highlight">Vanvasi Kalyan Ashram</span>, numerous 
-        Karyakartas (volunteers) devoted their life for its growth and welfare of tribals.
-    </p>
+    <!-- Shri Morubhao Ketkar -->
+    <div class="member-card">
+        <img src="image/ketkar.jpg" alt="Shri Morubhao Ketkar" class="member-photo">
+        <div class="member-info">
+            <div class="member-name">श्री मोरुभाऊ केतकर</div>
+            <div class="member-title">Shri Morubhao Ketkar</div>
+            <div class="member-description">
+                श्री मोरुभाऊ केतकर का जन्म गणेश चतुर्थी के दिन 1914 में हुआ। इस कारण माता-पिता ने नाम मोरेश्वर रखा। 
+                बाल्यावस्था से ही वे समाज सेवा में सक्रिय रहे। उनका योगदान Vanvasi Kalyan Ashram के विकास में अतुलनीय है।
+            </div>
+        </div>
+    </div>
 
-    <p>
-        <span class="highlight">श्री बालासाहब देशपांडे</span>
-    </p>
+    <!-- Sh. Raja Vijay Bhushan Singh -->
+    <div class="member-card">
+        <img src="image/vijaybhushan.jpg" alt="Shri Raja Vijay Bhushan Singh" class="member-photo">
+        <div class="member-info">
+            <div class="member-name">राजा विजय भूषण सिंह देव</div>
+            <div class="member-title">Shri Raja Vijay Bhushan Singh</div>
+            <div class="member-description">
+                जशपुर के राजा देव शरण सिंह का असमय निधन होने के पश्चात उनके पुत्र विजय भूषण सिंह देव का 
+                ५ वर्ष की आयु में ही राज्याभिषेक किया गया। उन्होंने समाज और जनजातीय कल्याण के क्षेत्र में सक्रिय भूमिका निभाई।
+            </div>
+        </div>
+    </div>
 
-    <p>
-        श्री रमाकांत केशव उर्फ़ बालासाहब देशपांडे का जन्म <span class="highlight">26 दिसंबर 1913</span> 
-        को अमरावती नगरी में हुआ। उनके पिताजी का नाम केशवराव देशपांडे एवं माताजी का नाम लक्ष्मीबाई था।
-    </p>
-
-    <p>
-        सन 1935 में नागपुर के हिस्लोप कॉलेज से बी.ए., 1937 में एल.एल.बी और 1939 में अर्थशास्त्र में 
-        एम.ए. की पढ़ाई पूरी की। 1942 के गाँधी जी के आवाहन पर ‘छोड़ो भारत’ आन्दोलन में रामटेक में 
-        सक्रिय भूमिका निभाई। परिणामतः अंग्रेज सरकार ने बालासाहब को छह महीनों के लिए कारावास में भेजा।
-    </p>
+    <!-- Sh. Mishri Lal Tiwari -->
+    <div class="member-card">
+        <img src="image/mishrilal.jpg" alt="Shri Mishri Lal Tiwari" class="member-photo">
+        <div class="member-info">
+            <div class="member-name">श्री मिश्रीलाल तिवारी</div>
+            <div class="member-title">Shri Mishri Lal Tiwari</div>
+            <div class="member-description">
+                श्री मिश्रीलाल जी का जन्म मध्य प्रदेश के शाजापुर के मोहल्ला काछीबाड़ा में फाल्गुन शुक्ल 
+                चतुर्दशी के दिन सन 1916 को हुआ। वे शिक्षा और समाज सेवा के क्षेत्र में सक्रिय रहे और Vanvasi 
+                Kalyan Ashram के विभिन्न कार्यों में योगदान दिया।
+            </div>
+        </div>
+    </div>
 
     <a class="back" href="index.html">⬅ वापस जाएं</a>
 
