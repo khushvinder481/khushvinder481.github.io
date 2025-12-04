@@ -22,20 +22,36 @@
         .member-card {
             background: #fff;
             padding: 15px;
-            margin: 12px 0;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            margin: 15px auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            max-width: 700px;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .member-photo {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #0077cc;
+        }
+
+        .member-info {
+            flex: 1;
         }
 
         .member-name {
-            font-size: 20px;
+            font-size: 22px;
             font-weight: bold;
             color: #333;
         }
 
         .member-position {
-            font-size: 16px;
-            margin-top: 4px;
+            font-size: 17px;
+            margin-top: 6px;
             color: #0077cc;
         }
 
@@ -49,28 +65,44 @@
 
     <h1>Governing Body</h1>
 
+    <!-- Member 1 -->
     <div class="member-card">
-        <div class="member-name">Shri Satyendra Singh</div>
-        <div class="member-position">President</div>
-        <div class="member-location">Jashpur, Chhattisgarh</div>
+        <img src="images/satyendra.jpeg" class="member-photo" alt="Satyendra Singh">
+        <div class="member-info">
+            <div class="member-name">Shri Satyendra Singh</div>
+            <div class="member-position">President</div>
+            <div class="member-location">Jashpur, Chhattisgarh</div>
+        </div>
     </div>
 
+    <!-- Member 2 -->
     <div class="member-card">
-        <div class="member-name">Shri Hira Kumar Nagu</div>
-        <div class="member-position">Vice President</div>
-        <div class="member-location">Agyanagar, Telangana</div>
+        <img src="images/nagu.jpeg" class="member-photo" alt="Hira Kumar Nagu">
+        <div class="member-info">
+            <div class="member-name">Shri Hira Kumar Nagu</div>
+            <div class="member-position">Vice President</div>
+            <div class="member-location">Agyanagar, Telangana</div>
+        </div>
     </div>
 
+    <!-- Member 3 -->
     <div class="member-card">
-        <div class="member-name">Shri Techi Govind</div>
-        <div class="member-position">Vice President</div>
-        <div class="member-location">Itanagar, Arunachal Pradesh</div>
+        <img src="images/govind.jpeg" class="member-photo" alt="Techi Govind">
+        <div class="member-info">
+            <div class="member-name">Shri Techi Govind</div>
+            <div class="member-position">Vice President</div>
+            <div class="member-location">Itanagar, Arunachal Pradesh</div>
+        </div>
     </div>
 
+    <!-- Member 4 -->
     <div class="member-card">
-        <div class="member-name">Shri Yogesh Bapat</div>
-        <div class="member-position">General Secretary</div>
-        <div class="member-location">Jashpur, Chhattisgarh</div>
+        <img src="images/bapat.jpeg" class="member-photo" alt="Yogesh Bapat">
+        <div class="member-info">
+            <div class="member-name">Shri Yogesh Bapat</div>
+            <div class="member-position">General Secretary</div>
+            <div class="member-location">Jashpur, Chhattisgarh</div>
+        </div>
     </div>
 
 </body>
