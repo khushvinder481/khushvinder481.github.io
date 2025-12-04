@@ -107,15 +107,77 @@ footer {
 
 <!-- NAVIGATION -->
 <nav>
-    <a href="#about">About</a>
-    <a href="#whatwedo">What We Do</a>
-    <a href="#wherewework">Where We Work</a>
-    <a href="gallery/index.html">Gallery</a>
-    <a href="donate.html">Donate</a>
-    <a href="contact.html">Contact</a>
-    <a href="donar.html">Donar List</a>
-    <a href="hindi.html">हिंदी</a>
+    <ul class="menu">
+        <li><a href="#about">About</a></li>
+
+        <li class="dropdown">
+            <a href="#whatwedo">What We Do ▾</a>
+            <ul class="dropdown-content">
+                <li><a href="education.html">Education</a></li>
+                <li><a href="hostel.html">Hostel</a></li>
+                <li><a href="health.html">Health</a></li>
+                <li><a href="awareness.html">Awareness</a></li>
+            </ul>
+        </li>
+
+        <li><a href="#wherewework">Where We Work</a></li>
+        <li><a href="gallery/index.html">Gallery</a></li>
+        <li><a href="donate.html">Donate</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="donar.html">Donor List</a></li>
+        <li><a href="hindi.html">हिंदी</a></li>
+    </ul>
 </nav>
+nav {
+    background: #0077cc;
+    padding: 10px;
+}
+
+nav .menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav .menu li {
+    position: relative;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+    display: block;
+    font-weight: 600;
+}
+
+/* Dropdown */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    background: #fff;
+    min-width: 180px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    border-radius: 4px;
+    z-index: 5;
+}
+
+.dropdown-content li a {
+    color: #333;
+    padding: 10px;
+}
+
+.dropdown-content li a:hover {
+    background: #f0f0f0;
+}
+
+/* SHOW DROPDOWN ON HOVER */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
 
 <!-- HERO SECTION -->
 <div class="hero">
@@ -129,9 +191,31 @@ footer {
 <div class="container">
 <h2>About Us</h2>
 <p>
-Vansawasi Kalyan Ashram is a dedicated NGO working for the upliftment of tribal communities.
-Our focus is on education, health programs, youth development, environmental protection,
-and preserving indigenous culture.
+Bharat is a land of unique cultural heritage having diversified nature. It is also a land of hundreds of Janjatis or ‘Vanvasis’. The Vanavasis find a mention in all ancient scriptures/literatures of our nation. In Ramayana, there are several references like Shabari, Baali, Sugreev etc while Mahabharata have references of Eklavya, Barbarik, Ghatotkacha etc. There were many Vanavasis who had actively participated in the freedom struggle like Birsa Munda in Ranchi region (Jharkhand State), Raghoji Bhangare in Maharashtra, Thalakkal Chandu in Kerala, Dora Besoyee in Odisha, Tirot Sing Syiem in Meghalaya, Santhal leaders in Bihar (Sidho, Kanho, and Tilka Manjhi),  Rani Gaidinliu and Shahid Jadonang of Manipur, Punja Bhil of Rajasthan. Many more are unsung Heroes from among Janjatis who took part in Indian Freedom Movement.
+
+Janjatis in our country comprise approximately 10% of total population, spread practically in all the States & Union Territories, except Haryana, Punjab and Delhi.
+
+The peculiarities which set the Vanvasis, apart from other citizens are their dresses, traditional adornments, their dialect, folklore and customs, their life style, traditions, their deities, etc. They have remained backward economically and socially. A Stigma and criminality is unfortunately attached with this section of society since generations by some sections of city dwellers in country. It is the need of the hour for society to respect Vanvasis and their rich culture.
+
+With the inspiration from Thakkar Bappa (Gandhian Leader) in the beginning, Vanvasi Kalyan Ashram was established by Mr. Ramakant Keshav Deshpande (popularly known as Vanyogi Balasaheb Deshpande), on 26th December 1952 at Jashpur in Madhya Pradesh (presently in Chhatisgarh) by enrolling 13 children of local Janjatis to start a hostel project.
+
+Encouraged with the success of various projects for the welfare of Janjatis over the period, from 1978, Vanvasi Kalyan Ashram extended its work in every state of India having Janjati population.
+
+Among all the volunteers of Vanvasi Kalyan Ashram, nearly half are from Janjatis. Apart from these, several students, working persons, professionals, retired persons etc are dedicate working for various projects for the Janjatis in the field of education, health, agriculture, economic development, to protect the constitutional rights, sports, spiritual and cultural congregations (Shraddha Jagaran) etc..
+
+Our Vision
+Self Reliant, Educated , Empowered Janjatis.
+Our Mission
+To eliminate the chasm between mainstream Indian community and their tribal brethren through social assimilation.
+To educate tribals through formal & non-formal education system including residential education.
+6249f9760013f780a12a614d_vision mission-p-1080
+To provide health facilities to tribals especially in remote areas where formal health care facilities are not available.
+To provide facilities to enable excellence of tribals in sprots especially their traditional sports.
+To uplift tribals economically through skill enhancement in their traditional livelihood as well as in new and alternate livelihood areas.
+To empower tribals through awareness generation about their constitutional rights, Govt Welfare Schemes available for them, their organization.
+To empower tribal women.
+To strengthen the faith, culture, traditions and rituals of tribals.
+To do Research & Development and Policy Planning on various subjects related with the welfare and empowerment of tribals.
 </p>
 </div>
 </section>
