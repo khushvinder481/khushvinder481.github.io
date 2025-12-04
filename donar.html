@@ -10,13 +10,13 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background: #f4f4f4;
+    background: #fff9e6; /* light yellow background */
     color: #333;
 }
 
 header {
-    background: #0b6623;
-    color: white;
+    background: #ffcc00; /* yellow header */
+    color: black;
     padding: 10px;
     display: flex;
     align-items: center;
@@ -29,7 +29,7 @@ header img {
 }
 
 nav {
-    background: #084c1e;
+    background: #e6b800; /* darker yellow nav */
     padding: 10px;
     text-align: center;
     position: sticky;
@@ -38,14 +38,15 @@ nav {
 }
 
 nav a {
-    color: white;
+    color: black;
     text-decoration: none;
     padding: 10px 20px;
     display: inline-block;
+    font-weight: bold;
 }
 
 nav a:hover {
-    background: #0b6623;
+    background: #ffcc33; /* bright yellow hover */
 }
 
 section {
@@ -59,7 +60,7 @@ section {
 
 h2 {
     text-align: center;
-    color: #0b6623;
+    color: #b37400; /* brownish yellow */
 }
 
 .grid {
@@ -69,15 +70,15 @@ h2 {
 }
 
 .card {
-    background: white;
+    background: #fff3b0; /* pale yellow card */
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }
 
 footer {
-    background: #084c1e;
-    color: white;
+    background: #e6b800;
+    color: black;
     text-align: center;
     padding: 20px;
     margin-top: 40px;
@@ -89,15 +90,26 @@ footer {
     padding: 0;
     margin: 0 auto;
     max-width: 600px;
+    border: 2px solid #ffcc33;
+    padding: 20px;
+    border-radius: 10px;
+    background: #fff9e6;
 }
 
 .donor-list li {
-    background: #fff;
+    background: #fff3b0;
     margin: 10px 0;
     padding: 15px 20px;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     font-size: 18px;
+}
+
+.authorized-note {
+    text-align: center;
+    color: #b37400;
+    font-weight: bold;
+    margin-bottom: 20px;
 }
 </style>
 </head>
@@ -125,23 +137,18 @@ footer {
 <section>
     <div class="container">
         <h2>Our Valued Donors</h2>
+        <p class="authorized-note">Only authorized personnel can view this donor list.</p>
         <p>We sincerely thank all our donors for supporting our mission to empower tribal communities.</p>
         
         <ul class="donor-list">
-            <li>John Doe</li>
-            <li>Jane Smith</li>
-            <li>Rajesh Kumar</li>
-            <li>Priya Singh</li>
-            <li>Vikram Patel</li>
-            <li>Anita Verma</li>
-            <!-- Add more donors here -->
-        </ul>
-    </div>
-</section>
-
-<footer>
-    <p>© 2025 Vansawasi Kalyan Ashram | All Rights Reserved</p>
-</footer>
-
-</body>
-</html>
+            <li>Rohit</li>
+            <li>Sumit</li>
+            <li>Abhshik</li>
+            <li>Lokesh</li>
+            <li>Jagdish</li>
+            <li>Nitin</li>
+            <li>SN Sharma</li>
+            <li>Devender</li>
+            <li>Narender</li>
+            <li>Rahul</li>
+            <li>Mohit Ratho
