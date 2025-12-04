@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hostels - Kalyan Ashram</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #162447, #1b1b2f);
+            color: #f0f0f0;
+            line-height: 1.8;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 50px auto;
+            padding: 20px;
+        }
+
+        h1, h2 {
+            text-align: center;
+            color: #ffcc00;
+            text-shadow: 1px 1px 5px #000;
+        }
+
+        p {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        /* Section with image and text */
+        .hostel-section {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 30px;
+            margin-top: 40px;
+            padding: 20px;
+            background: rgba(255,255,255,0.05);
+            border-radius: 15px;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.5);
+        }
+
+        .hostel-image {
+            flex: 1;
+            text-align: center;
+        }
+
+        .hostel-image img {
+            width: 100%;
+            max-width: 350px;
+            border-radius: 15px;
+            border: 3px solid #ffcc00;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.7);
+        }
+
+        .hostel-text {
+            flex: 2;
+        }
+
+        /* Statistics table */
+        .stats {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 30px;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .stat-box {
+            background: rgba(255,204,0,0.1);
+            padding: 20px 30px;
+            border-radius: 12px;
+            text-align: center;
+            flex: 1;
+            min-width: 150px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+        }
+
+        .stat-box h3 {
+            font-size: 24px;
+            color: #ffcc00;
+            margin-bottom: 10px;
+        }
+
+        .stat-box p {
+            font-size: 20px;
+            color: #fff;
+            margin: 0;
+        }
+
+        a.back {
+            display: block;
+            text-align: center;
+            margin-top: 40px;
+            padding: 12px 25px;
+            background: #ffcc00;
+            color: #1b1b2f;
+            text-decoration: none;
+            border-radius: 6px;
+            font-size: 18px;
+            font-weight: bold;
+            transition: 0.3s ease;
+        }
+
+        a.back:hover {
+            background: #e6b800;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <h1>Hostels</h1>
+
+    <p>
+        This is also a project related to the education sector. Kalyan Ashram itself started its journey by establishing a hostel 
+        and the work of Kalyan Ashram can be shown to any person by reflecting upon the working and achievements of a Hostel. 
+        Today we are running 238 hostels in the country, out of which there are 48 hostels dedicated for girls. 
+        A total of 7320 boys and girls are studying in these hostels. Today, many rural forest dwelling workers, while introducing themselves say – 
+        ‘I have studied in the hostel of Kalyan Ashram’ which implies that the Hostels play an important role in development of workers. 
+        Hostels provide a conducive atmosphere for imbibing values along with imparting education. 
+        It is worth mentioning that many children from rural areas of far-flung areas in North-East come to study in hostels running in different cities of our country. 
+        This is a unique project running for all of them. By means of providing Hostels, a sense of national unity is strengthened by means of education.
+    </p>
+
+    <!-- Hostel Section with Image -->
+    <div class="hostel-section">
+        <div class="hostel-image">
+            <img src="images/Hostel_014.jpg" alt="Girls Hostel">
+        </div>
+        <div class="hostel-text">
+            <h2>Hostel Statistics</h2>
+            <div class="stats">
+                <div class="stat-box">
+                    <h3>Boys</h3>
+                    <p>175</p>
+                </div>
+                <div class="stat-box">
+                    <h3>Girls</h3>
+                    <p>55</p>
+                </div>
+                <div class="stat-box">
+                    <h3>Total Students</h3>
+                    <p>Boys: 6,328</p>
+                    <p>Girls: 992</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <a class="back" href="index.html">⬅ वापस जाएं</a>
+
+</div>
+
+</body>
+</html>
