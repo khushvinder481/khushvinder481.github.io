@@ -268,251 +268,169 @@ nav {
 </div>
 </section>
 
-<section id="wherewework" style="padding:50px; background:#f7f7f7;">
-    <h2 style="text-align:center; color:#0077cc; margin-bottom:20px;">Where We Work</h2>
 
-    <p style="text-align:center; max-width:900px; margin:0 auto 40px; font-size:18px;">
-        Hover on any Indian state to view the tribal regions where Vanvasi Kalyan Ashram works.
-    </p>
+<section id="wherewework" style="padding:50px; background:#f5f5f5;">
+    <h2 style="text-align:center; color:#0077cc;">Where We Work</h2>
 
-    <div style="max-width:900px; margin:0 auto; position:relative;">
-        <svg viewBox="0 0 1000 1000" style="width:100%; height:auto;">
+    <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:40px; margin-top:30px;">
 
-            <!-- ======== FULL INDIA STATES (All 28) + 8 UTs ======== -->
-            <!-- SHAPES are optimized; COLORS are unique; TOOLTIP shows details -->
+        <!-- ================= INDIA MAP =============== -->
+        <div style="flex:1; min-width:350px; max-width:500px;">
+            <svg viewBox="0 0 1000 1000" style="width:100%; height:auto;">
 
-            <!-- ANDHRA PRADESH -->
-            <path d="M600 700 L650 720 L630 780 L580 760 Z"
-                  fill="#FF8C00" stroke="#fff" stroke-width="2"
-                  data-info="Andhra Pradesh: Tribal belts, Eastern Ghats">
-            </path>
+                <!-- SAMPLE SHAPES | each with state code -->
 
-            <!-- ARUNACHAL PRADESH -->
-            <path d="M850 300 L900 320 L880 360 L830 340 Z"
-                  fill="#8B008B" stroke="#fff" stroke-width="2"
-                  data-info="Arunachal Pradesh: Siang, Tirap, Changlang">
-            </path>
+                <!-- CHHATTISGARH (CG) -->
+                <path d="M530 500 L600 520 L590 610 L520 580 Z"
+                      fill="#FFA500" stroke="#fff" stroke-width="2"
+                      data-info="CG - Chhattisgarh">
+                </path>
 
-            <!-- ASSAM -->
-            <path d="M780 380 L830 400 L820 440 L770 420 Z"
-                  fill="#228B22" stroke="#fff" stroke-width="2"
-                  data-info="Assam: BTR, Karbi Anglong, Dima Hasao">
-            </path>
+                <!-- MADHYA PRADESH (MP) -->
+                <path d="M350 420 L420 430 L410 500 L340 490 Z"
+                      fill="#FF7F50" stroke="#fff" stroke-width="2"
+                      data-info="MP - Madhya Pradesh">
+                </path>
 
-            <!-- BIHAR -->
-            <path d="M630 420 L680 430 L670 470 L620 460 Z"
-                  fill="#00BFFF" stroke="#fff" stroke-width="2"
-                  data-info="Bihar: Santhal areas, tribal clusters">
-            </path>
+                <!-- MAHARASHTRA (MH) -->
+                <path d="M320 550 L420 560 L430 620 L330 610 Z"
+                      fill="#6A5ACD" stroke="#fff" stroke-width="2"
+                      data-info="MH - Maharashtra">
+                </path>
 
-            <!-- CHHATTISGARH -->
-            <path d="M530 500 L600 520 L590 610 L520 580 Z"
-                  fill="#FFA500" stroke="#fff" stroke-width="2"
-                  data-info="Chhattisgarh: Bastar, Surguja, Dantewada">
-            </path>
+                <!-- RAJASTHAN (RJ) -->
+                <path d="M200 400 L300 380 L320 470 L220 480 Z"
+                      fill="#20B2AA" stroke="#fff" stroke-width="2"
+                      data-info="RJ - Rajasthan">
+                </path>
 
-            <!-- DELHI -->
-            <path d="M500 350 L510 352 L509 360 L498 358 Z"
-                  fill="#696969" stroke="#fff" stroke-width="2"
-                  data-info="Delhi: Urban tribal welfare">
-            </path>
+                <!-- GUJARAT (GJ) -->
+                <path d="M250 550 L330 540 L340 600 L270 620 Z"
+                      fill="#32CD32" stroke="#fff" stroke-width="2"
+                      data-info="GJ - Gujarat">
+                </path>
 
-            <!-- GOA -->
-            <path d="M350 650 L370 655 L368 675 L348 670 Z"
-                  fill="#6A5ACD" stroke="#fff" stroke-width="2"
-                  data-info="Goa: Tribal belts">
-            </path>
+                <!-- ODISHA (OD) -->
+                <path d="M600 540 L670 550 L660 610 L590 600 Z"
+                      fill="#32CD32" stroke="#fff" stroke-width="2"
+                      data-info="OD - Odisha">
+                </path>
 
-            <!-- GUJARAT -->
-            <path d="M250 550 L330 540 L340 600 L270 620 Z"
-                  fill="#32CD32" stroke="#fff" stroke-width="2"
-                  data-info="Gujarat: Dahod, Panchmahal, Chhota Udepur">
-            </path>
+                <!-- JHARKHAND (JH) -->
+                <path d="M590 460 L640 470 L630 520 L580 500 Z"
+                      fill="#FF6347" stroke="#fff" stroke-width="2"
+                      data-info="JH - Jharkhand">
+                </path>
 
-            <!-- HARYANA -->
-            <path d="M450 360 L500 365 L495 410 L445 405 Z"
-                  fill="#8B4513" stroke="#fff" stroke-width="2"
-                  data-info="Haryana: Support activities">
-            </path>
+                <!-- UTTAR PRADESH (UP) -->
+                <path d="M500 420 L580 430 L570 470 L490 460 Z"
+                      fill="#3CB371" stroke="#fff" stroke-width="2"
+                      data-info="UP - Uttar Pradesh">
+                </path>
 
-            <!-- HIMACHAL PRADESH -->
-            <path d="M450 300 L500 310 L490 340 L440 330 Z"
-                  fill="#DC143C" stroke="#fff" stroke-width="2"
-                  data-info="Himachal Pradesh: Tribal belts">
-            </path>
+                <!-- WEST BENGAL (WB) -->
+                <path d="M680 470 L740 480 L730 520 L670 510 Z"
+                      fill="#FF69B4" stroke="#fff" stroke-width="2"
+                      data-info="WB - West Bengal">
+                </path>
 
-            <!-- JHARKHAND -->
-            <path d="M590 460 L640 470 L630 520 L580 500 Z"
-                  fill="#FF6347" stroke="#fff" stroke-width="2"
-                  data-info="Jharkhand: Ranchi, Gumla, Singhbhum">
-            </path>
+                <!-- BIHAR (BR) -->
+                <path d="M630 420 L680 430 L670 470 L620 460 Z"
+                      fill="#00BFFF" stroke="#fff" stroke-width="2"
+                      data-info="BR - Bihar">
+                </path>
 
-            <!-- KARNATAKA -->
-            <path d="M420 700 L480 710 L470 780 L410 760 Z"
-                  fill="#00CED1" stroke="#fff" stroke-width="2"
-                  data-info="Karnataka: Uttara Kannada, Kodagu">
-            </path>
+                <!-- ASSAM (AS) -->
+                <path d="M780 380 L830 400 L820 440 L770 420 Z"
+                      fill="#228B22" stroke="#fff" stroke-width="2"
+                      data-info="AS - Assam">
+                </path>
 
-            <!-- KERALA -->
-            <path d="M450 780 L500 820 L480 860 L430 820 Z"
-                  fill="#228B22" stroke="#fff" stroke-width="2"
-                  data-info="Kerala: Wayanad, Idukki">
-            </path>
+                <!-- ANDHRA PRADESH (AP) -->
+                <path d="M600 700 L650 720 L630 780 L580 760 Z"
+                      fill="#FF8C00" stroke="#fff" stroke-width="2"
+                      data-info="AP - Andhra Pradesh">
+                </path>
 
-            <!-- MADHYA PRADESH -->
-            <path d="M350 420 L420 430 L410 500 L340 490 Z"
-                  fill="#FF7F50" stroke="#fff" stroke-width="2"
-                  data-info="Madhya Pradesh: Mandla, Balaghat, Dindori">
-            </path>
+                <!-- KARNATAKA (KA) -->
+                <path d="M420 700 L480 710 L470 780 L410 760 Z"
+                      fill="#00CED1" stroke="#fff" stroke-width="2"
+                      data-info="KA - Karnataka">
+                </path>
 
-            <!-- MAHARASHTRA -->
-            <path d="M320 550 L420 560 L430 620 L330 610 Z"
-                  fill="#6A5ACD" stroke="#fff" stroke-width="2"
-                  data-info="Maharashtra: Gondia, Gadchiroli, Nandurbar">
-            </path>
+                <!-- TAMIL NADU (TN) -->
+                <path d="M500 780 L560 810 L530 880 L470 850 Z"
+                      fill="#DAA520" stroke="#fff" stroke-width="2"
+                      data-info="TN - Tamil Nadu">
+                </path>
 
-            <!-- MANIPUR -->
-            <path d="M850 420 L890 430 L880 460 L840 450 Z"
-                  fill="#CD5C5C" stroke="#fff" stroke-width="2"
-                  data-info="Manipur: Hills & tribal regions">
-            </path>
+                <!-- KERALA (KL) -->
+                <path d="M450 780 L500 820 L480 860 L430 820 Z"
+                      fill="#228B22" stroke="#fff" stroke-width="2"
+                      data-info="KL - Kerala">
+                </path>
 
-            <!-- MEGHALAYA -->
-            <path d="M800 430 L840 440 L830 470 L790 460 Z"
-                  fill="#20B2AA" stroke="#fff" stroke-width="2"
-                  data-info="Meghalaya: Khasi, Garo, Jaintia hills">
-            </path>
+            </svg>
 
-            <!-- MIZORAM -->
-            <path d="M850 500 L900 510 L890 540 L840 530 Z"
-                  fill="#FF1493" stroke="#fff" stroke-width="2"
-                  data-info="Mizoram: All tribal districts">
-            </path>
+            <div id="tooltip"
+                style="position:absolute; background:#222; color:#fff; padding:6px 12px; border-radius:5px; display:none;">
+            </div>
+        </div>
 
-            <!-- NAGALAND -->
-            <path d="M820 470 L860 480 L850 510 L810 500 Z"
-                  fill="#008080" stroke="#fff" stroke-width="2"
-                  data-info="Nagaland: Entire state">
-            </path>
+        <!-- ================== STATE LIST ================= -->
+        <div style="flex:1; min-width:300px;">
+            <h3 style="text-align:center;">List of Indian States (With State Codes)</h3>
 
-            <!-- ODISHA -->
-            <path d="M600 540 L670 550 L660 610 L590 600 Z"
-                  fill="#32CD32" stroke="#fff" stroke-width="2"
-                  data-info="Odisha: Kandhamal, Koraput, Malkangiri">
-            </path>
-
-            <!-- PUNJAB -->
-            <path d="M420 320 L460 330 L455 360 L415 350 Z"
-                  fill="#8A2BE2" stroke="#fff" stroke-width="2"
-                  data-info="Punjab: Welfare support regions">
-            </path>
-
-            <!-- RAJASTHAN -->
-            <path d="M200 400 L300 380 L320 470 L220 480 Z"
-                  fill="#20B2AA" stroke="#fff" stroke-width="2"
-                  data-info="Rajasthan: Udaipur, Banswara, Dungarpur">
-            </path>
-
-            <!-- SIKKIM -->
-            <path d="M720 350 L755 360 L750 380 L715 370 Z"
-                  fill="#9932CC" stroke="#fff" stroke-width="2"
-                  data-info="Sikkim: Tribal belts">
-            </path>
-
-            <!-- TAMIL NADU -->
-            <path d="M500 780 L560 810 L530 880 L470 850 Z"
-                  fill="#DAA520" stroke="#fff" stroke-width="2"
-                  data-info="Tamil Nadu: Nilgiris, Tribal regions">
-            </path>
-
-            <!-- TELANGANA -->
-            <path d="M500 600 L560 610 L550 660 L490 650 Z"
-                  fill="#FF4500" stroke="#fff" stroke-width="2"
-                  data-info="Telangana: Adilabad, Komaram Bheem">
-            </path>
-
-            <!-- TRIPURA -->
-            <path d="M830 490 L870 500 L860 530 L820 520 Z"
-                  fill="#DB7093" stroke="#fff" stroke-width="2"
-                  data-info="Tripura: Entire tribal belt">
-            </path>
-
-            <!-- UTTAR PRADESH -->
-            <path d="M500 420 L580 430 L570 470 L490 460 Z"
-                  fill="#3CB371" stroke="#fff" stroke-width="2"
-                  data-info="Uttar Pradesh: Sonbhadra, Mirzapur">
-            </path>
-
-            <!-- UTTARAKHAND -->
-            <path d="M520 350 L560 360 L550 390 L510 380 Z"
-                  fill="#4169E1" stroke="#fff" stroke-width="2"
-                  data-info="Uttarakhand: Tribal hill areas">
-            </path>
-
-            <!-- WEST BENGAL -->
-            <path d="M680 470 L740 480 L730 520 L670 510 Z"
-                  fill="#FF69B4" stroke="#fff" stroke-width="2"
-                  data-info="West Bengal: Jalpaiguri, Purulia, Jhargram">
-            </path>
-
-        </svg>
-
-        <!-- Tooltip -->
-        <div id="tooltip"
-            style="position:absolute; background:#333; color:#fff; padding:6px 12px; border-radius:5px; font-size:14px;
-                   display:none; pointer-events:none; z-index:1000;">
+            <ul style="columns:2; list-style:none; padding:0; font-size:18px; line-height:1.8;">
+                <li>AP – Andhra Pradesh</li>
+                <li>AR – Arunachal Pradesh</li>
+                <li>AS – Assam</li>
+                <li>BR – Bihar</li>
+                <li>CG – Chhattisgarh</li>
+                <li>GA – Goa</li>
+                <li>GJ – Gujarat</li>
+                <li>HR – Haryana</li>
+                <li>HP – Himachal Pradesh</li>
+                <li>JH – Jharkhand</li>
+                <li>JK – Jammu & Kashmir</li>
+                <li>KA – Karnataka</li>
+                <li>KL – Kerala</li>
+                <li>MP – Madhya Pradesh</li>
+                <li>MH – Maharashtra</li>
+                <li>MN – Manipur</li>
+                <li>ML – Meghalaya</li>
+                <li>MZ – Mizoram</li>
+                <li>NL – Nagaland</li>
+                <li>OD – Odisha</li>
+                <li>PB – Punjab</li>
+                <li>RJ – Rajasthan</li>
+                <li>SK – Sikkim</li>
+                <li>TN – Tamil Nadu</li>
+                <li>TS – Telangana</li>
+                <li>TR – Tripura</li>
+                <li>UP – Uttar Pradesh</li>
+                <li>UK – Uttarakhand</li>
+                <li>WB – West Bengal</li>
+            </ul>
         </div>
     </div>
 </section>
 
 <script>
-    const svg = document.querySelector("svg");
-    const tooltip = document.getElementById("tooltip");
+const svg = document.querySelector("svg");
+const tooltip = document.getElementById("tooltip");
 
-    svg.addEventListener("mousemove", e => {
-        const target = e.target;
-        if (target.tagName === "path") {
-            tooltip.style.display = "block";
-            tooltip.innerHTML = target.getAttribute("data-info");
-            tooltip.style.top = (e.pageY - 40) + "px";
-            tooltip.style.left = (e.pageX + 20) + "px";
-        } else {
-            tooltip.style.display = "none";
-        }
-    });
-</script>
-
-<script>
-  // Tooltip on hover
-  const paths = document.querySelectorAll('svg path');
-
-  paths.forEach(path => {
-    path.addEventListener('mouseover', (e) => {
-      const title = path.getAttribute('title');
-      const tooltip = document.createElement('div');
-      tooltip.className = 'map-tooltip';
-      tooltip.innerHTML = title;
-      tooltip.style.position = 'absolute';
-      tooltip.style.background = '#333';
-      tooltip.style.color = '#fff';
-      tooltip.style.padding = '5px 10px';
-      tooltip.style.borderRadius = '5px';
-      tooltip.style.top = e.pageY + 10 + 'px';
-      tooltip.style.left = e.pageX + 10 + 'px';
-      tooltip.style.pointerEvents = 'none';
-      tooltip.style.zIndex = 1000;
-      document.body.appendChild(tooltip);
-
-      path.addEventListener('mousemove', (ev) => {
-        tooltip.style.top = ev.pageY + 10 + 'px';
-        tooltip.style.left = ev.pageX + 10 + 'px';
-      });
-
-      path.addEventListener('mouseout', () => {
-        tooltip.remove();
-      });
-    });
-  });
+svg.addEventListener("mousemove", e => {
+    const target = e.target;
+    if (target.tagName === "path") {
+        tooltip.style.display = "block";
+        tooltip.innerHTML = target.getAttribute("data-info");
+        tooltip.style.top = (e.pageY - 40) + "px";
+        tooltip.style.left = (e.pageX + 20) + "px";
+    } else {
+        tooltip.style.display = "none";
+    }
+});
 </script>
 
 
