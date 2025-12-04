@@ -269,17 +269,65 @@ nav {
 </section>
 
 <!-- WHERE WE WORK SECTION -->
-<section id="wherewework">
-<div class="container">
-<h2>Where We Work</h2>
-<div class="grid">
-<div class="card"><h3>Madhya Pradesh</h3><p>Mandla, Balaghat, Dindori</p></div>
-<div class="card"><h3>Maharashtra</h3><p>Gondia, Gadchiroli</p></div>
-<div class="card"><h3>Chhattisgarh</h3><p>Bastar, Surguja</p></div>
-<div class="card"><h3>Rajasthan</h3><p>Udaipur, Banswara</p></div>
-</div>
-</div>
+<section id="wherewework" style="padding: 50px; background: #f2f2f2;">
+  <div class="container">
+    <h2 style="text-align:center; color:#0077cc; margin-bottom: 40px;">Where We Work</h2>
+
+    <p style="text-align:center; max-width:800px; margin: 0 auto 40px;">
+      Vanvasi Kalyan Ashram is active in several states across India. Hover over the states to see the specific districts where we work.
+    </p>
+
+    <!-- SVG Map -->
+    <div style="max-width:1000px; margin: 0 auto;">
+      <svg viewBox="0 0 1000 1000" style="width:100%; height:auto;">
+        <!-- Example of 4 states; you can add all Indian states -->
+        <path d="M150,200 L250,200 L250,300 L150,300 Z" fill="#FF5733" stroke="#fff" stroke-width="2" data-state="Madhya Pradesh" title="Madhya Pradesh: Mandla, Balaghat, Dindori"></path>
+        <path d="M300,300 L400,300 L400,400 L300,400 Z" fill="#33FF57" stroke="#fff" stroke-width="2" data-state="Maharashtra" title="Maharashtra: Gondia, Gadchiroli"></path>
+        <path d="M500,200 L600,200 L600,300 L500,300 Z" fill="#3357FF" stroke="#fff" stroke-width="2" data-state="Chhattisgarh" title="Chhattisgarh: Bastar, Surguja"></path>
+        <path d="M700,300 L800,300 L800,400 L700,400 Z" fill="#FF33A8" stroke="#fff" stroke-width="2" data-state="Rajasthan" title="Rajasthan: Udaipur, Banswara"></path>
+        <!-- Add remaining states similarly -->
+      </svg>
+    </div>
+
+    <p style="text-align:center; margin-top:30px; font-style:italic; color:#555;">
+      Each state is highlighted where Vanvasi Kalyan Ashram is active.
+    </p>
+  </div>
 </section>
+
+<script>
+  // Tooltip on hover
+  const paths = document.querySelectorAll('svg path');
+
+  paths.forEach(path => {
+    path.addEventListener('mouseover', (e) => {
+      const title = path.getAttribute('title');
+      const tooltip = document.createElement('div');
+      tooltip.className = 'map-tooltip';
+      tooltip.innerHTML = title;
+      tooltip.style.position = 'absolute';
+      tooltip.style.background = '#333';
+      tooltip.style.color = '#fff';
+      tooltip.style.padding = '5px 10px';
+      tooltip.style.borderRadius = '5px';
+      tooltip.style.top = e.pageY + 10 + 'px';
+      tooltip.style.left = e.pageX + 10 + 'px';
+      tooltip.style.pointerEvents = 'none';
+      tooltip.style.zIndex = 1000;
+      document.body.appendChild(tooltip);
+
+      path.addEventListener('mousemove', (ev) => {
+        tooltip.style.top = ev.pageY + 10 + 'px';
+        tooltip.style.left = ev.pageX + 10 + 'px';
+      });
+
+      path.addEventListener('mouseout', () => {
+        tooltip.remove();
+      });
+    });
+  });
+</script>
+
 
 <!-- FOOTER -->
 <footer>
