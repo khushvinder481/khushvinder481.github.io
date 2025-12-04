@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education - Kalyan Ashram</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('images/education_bg.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #fff;
+            line-height: 1.8;
+        }
+
+        /* Blur overlay */
+        .overlay {
+            background: rgba(0, 0, 0, 0.65);
+            backdrop-filter: blur(5px);
+            min-height: 100vh;
+            padding: 50px 20px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        h1 {
+            text-align: center;
+            color: #ffcc00;
+            margin-bottom: 40px;
+            text-shadow: 1px 1px 5px #000;
+        }
+
+        .section {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            margin-bottom: 50px;
+            flex-wrap: wrap;
+        }
+
+        .section:nth-child(even) .text {
+            order: 2;
+        }
+
+        .section:nth-child(even) .image {
+            order: 1;
+        }
+
+        .image img {
+            width: 400px;
+            max-width: 100%;
+            border-radius: 15px;
+            border: 3px solid #ffcc00;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.7);
+        }
+
+        .text {
+            flex: 1;
+            font-size: 18px;
+        }
+
+        .highlight {
+            color: #ffcc00;
+            font-weight: bold;
+        }
+
+        a.back {
+            display: block;
+            text-align: center;
+            margin-top: 40px;
+            padding: 12px 25px;
+            background: #ffcc00;
+            color: #1b1b2f;
+            text-decoration: none;
+            border-radius: 6px;
+            font-size: 18px;
+            font-weight: bold;
+            transition: 0.3s ease;
+        }
+
+        a.back:hover {
+            background: #e6b800;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="overlay">
+
+    <div class="container">
+
+        <h1>Education</h1>
+
+        <!-- Section 1 - Education -->
+        <div class="section">
+            <div class="text">
+                <p>
+                    Education is the right of all children and there is a special need for education in remote tribal areas. 
+                    Even today, due to fewer schools, janjaati children have to travel far away for education. 
+                    Quality of education is another challenge amongst the limited number of available schools.
+                </p>
+                <p>
+                    Along with the government, many social organizations are also working in various forms for education 
+                    in the janjaati areas. Due to the ideas propounded by the British in our country, many people feel 
+                    that education is a matter of governance. But in reality, Indian thought process says that it is the 
+                    responsibility of the society that everyone should get good education easily.
+                </p>
+            </div>
+            <div class="image">
+                <img src="images/Yuva_102.jpg" alt="Education Image">
+            </div>
+        </div>
+
+        <!-- Section 2 - Special Project -->
+        <div class="section">
+            <div class="text">
+                <p class="highlight">Special Project - Ekal Vidyalaya</p>
+                <p>
+                    Ekal Vidyalaya is a project that will inspire not only any janjaati youth but also all social workers. 
+                    In a village where Ekal Vidyalaya is operational, youngsters from the same village gather children 
+                    studying of different grades for 3-4 hours every day in the courtyard of any house, or in a temple 
+                    or under a tree, and along with formal education, try to inculcate Sanskar as well. 
+                    At present more than 2000 such Ekal Vidyalaya are being operated by Kalyan Ashram.
+                </p>
+            </div>
+        </div>
+
+        <a class="back" href="index.html">⬅ वापस जाएं</a>
+
+    </div>
+
+</div>
+
+</body>
+</html>
