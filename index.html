@@ -6,153 +6,42 @@
 <title>Kalyan Ashram Gurgaon</title>
 
 <style>
-/* Reset */
+/* RESET */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
     background: #f4f4f4;
 }
-  
+
 /* HEADER */
 header {
-    background: white; /* changed from #e67e22 to white */
-    padding: 10px;
     display: flex;
-    align-items: center;
-    gap: 15px;
-    color: black; /* change text to black for contrast */
-}
-
-header img {
-    height: 60px;
-}
-/* HERO SLIDER */
-.hero {
-    position: relative;
-    height: 350px;
-    overflow: hidden;
-}
-
-.hero img {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    animation: slideShow 15s infinite;
-    opacity: 0;
-}
-
-.hero img:nth-child(1) { animation-delay: 0s; }
-.hero img:nth-child(2) { animation-delay: 5s; }
-.hero img:nth-child(3) { animation-delay: 10s; }
-
-@keyframes slideShow {
-    0% { opacity: 0; }
-    10% { opacity: 1; }
-    30% { opacity: 1; }
-    40% { opacity: 0; }
-    100% { opacity: 0; }
-}
-
-/* SECTION STYLES */
-section {
-    padding: 40px;
-}
-.container {
-    max-width: 1000px;
-    margin: auto;
-}
-h1, h2 {
-    text-align: center;
-}
-
-/* GRID CARDS */
-.grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-}
-.card {
-    background: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-}
-
-/* FOOTER */
-footer {
-    background: #e67e22;
-    color: white;
-    text-align: center;
-    padding: 20px;
-    margin-top: 40px;
-}
-</style>
-</head>
-
-<body>
-
-<header>
-    <div class="header-left">
-        <img src="image/kalyanAshram_logo.png" alt="Logo">
-        <h1>
-            <span class="english-title">Vanvasi Kalyan Ashram</span> 
-            <span class="hindi-title">(वनवासी कल्याण आश्रम)</span>
-        </h1>
-    </div>
-
-    <!-- NAVIGATION -->
-    <nav>
-        <ul class="menu">
-             <li class="dropdown">
-            <a href="#about">About Us▾</a>
-               <ul class="dropdown-content">
-                    <li><a href="governing.html">Governing Body</a></li>
-                    <li><a href="foundation.html">Foundation Stone</a></li>
-                    <li><a href="kalyan.html">कल्याण आश्रम –परिचय</a></li>
-                    <li><a href="project.html">Project At A Glance</a></li>
-                </ul>
-            </li>   
-            
-            <li class="dropdown">
-                <a href="#whatwedo">What We Do ▾</a>
-                <ul class="dropdown-content">
-                    <li><a href="education.html">Education</a></li>
-                    <li><a href="hostels.html">Hostels</a></li>
-                    <li><a href="health.html">Health</a></li>
-                    <li><a href="sports.html">Sports</a></li>
-                    <li><a href="woman activity.html">Woman Activity</a></li>
-                </ul>
-            </li>
-
-            <li><a href="#wherewework">Where We Work</a></li>
-            <li><a href="gallery/index.html">Gallery</a></li>
-            <li><a href="donate.html">Donate</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="donar.html">Donor List</a></li>
-            <li><a href="hindi.html">हिंदी</a></li>
-        </ul>
-    </nav>
-</header>
-
-<style>
-/* HEADER FLEX */
-header {
-    display: flex;
-    justify-content: space-between; /* logo/title left, nav right */
+    justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
     background: white;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    flex-wrap: wrap;
+}
+
+header .header-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+header img {
+    height: 50px;
 }
 
 header h1 {
-    font-size: 18px; /* small size for title */
+    font-size: 18px;
     margin: 0;
+    line-height: 1.2;
 }
 
 header .hindi-title {
-    font-size: 14px; /* smaller for Hindi */
+    font-size: 14px;
     margin-left: 5px;
 }
 
@@ -163,6 +52,7 @@ nav .menu {
     gap: 20px;
     margin: 0;
     padding: 0;
+    flex-wrap: wrap;
 }
 
 nav .menu li {
@@ -203,8 +93,198 @@ nav a {
 .dropdown:hover .dropdown-content {
     display: block;
 }
-</style>
 
+/* HERO SLIDER */
+.hero {
+    position: relative;
+    height: 250px;
+    overflow: hidden;
+}
+
+.hero img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    animation: slideShow 15s infinite;
+    opacity: 0;
+}
+
+.hero img:nth-child(1) { animation-delay: 0s; }
+.hero img:nth-child(2) { animation-delay: 5s; }
+.hero img:nth-child(3) { animation-delay: 10s; }
+
+@keyframes slideShow {
+    0% { opacity: 0; }
+    10% { opacity: 1; }
+    30% { opacity: 1; }
+    40% { opacity: 0; }
+    100% { opacity: 0; }
+}
+
+/* SECTION STYLES */
+section {
+    padding: 30px 20px;
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+/* GRID CARDS */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+/* MISSION SECTION */
+.mission {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 30px;
+    margin-top: 30px;
+    background: rgba(255,255,255,0.05);
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+}
+
+.mission img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 15px;
+    border: 3px solid #ffcc00;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.7);
+}
+
+/* WHERE WE WORK */
+.where-work {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+
+.where-work img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 8px #aaa;
+}
+
+.where-work ul {
+    columns: 2;
+    list-style: none;
+    padding: 0;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+/* FOOTER */
+footer {
+    background: #e67e22;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* MEDIA QUERIES FOR MOBILE */
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    nav .menu {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .mission {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .where-work {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .where-work ul {
+        columns: 1;
+        text-align: center;
+    }
+
+    .hero {
+        height: 200px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+    <div class="header-left">
+        <img src="image/kalyanAshram_logo.png" alt="Logo">
+        <h1>
+            <span class="english-title">Vanvasi Kalyan Ashram</span>
+            <span class="hindi-title">(वनवासी कल्याण आश्रम)</span>
+        </h1>
+    </div>
+
+    <!-- NAVIGATION -->
+    <nav>
+        <ul class="menu">
+            <li class="dropdown">
+                <a href="#about">About Us ▾</a>
+                <ul class="dropdown-content">
+                    <li><a href="governing.html">Governing Body</a></li>
+                    <li><a href="foundation.html">Foundation Stone</a></li>
+                    <li><a href="kalyan.html">कल्याण आश्रम –परिचय</a></li>
+                    <li><a href="project.html">Project At A Glance</a></li>
+                </ul>
+            </li>
+
+            <li class="dropdown">
+                <a href="#whatwedo">What We Do ▾</a>
+                <ul class="dropdown-content">
+                    <li><a href="education.html">Education</a></li>
+                    <li><a href="hostels.html">Hostels</a></li>
+                    <li><a href="health.html">Health</a></li>
+                    <li><a href="sports.html">Sports</a></li>
+                    <li><a href="woman activity.html">Woman Activity</a></li>
+                </ul>
+            </li>
+
+            <li><a href="#wherewework">Where We Work</a></li>
+            <li><a href="gallery/index.html">Gallery</a></li>
+            <li><a href="donate.html">Donate</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="donar.html">Donor List</a></li>
+            <li><a href="hindi.html">हिंदी</a></li>
+        </ul>
+    </nav>
+</header>
 
 <!-- HERO IMAGE SLIDER -->
 <div class="hero">
@@ -213,7 +293,7 @@ nav a {
     <img src="image/IMG-20200413-WA0027.jpg" alt="">
 </div>
 
- <!-- ABOUT US SECTION -->
+<!-- ABOUT US SECTION -->
 <section id="about">
     <div class="container">
         <h1 style="text-align: center; color: #ffcc00; text-shadow: 1px 1px 5px #000;">About Us</h1>
@@ -247,17 +327,18 @@ nav a {
             agriculture, economic development, to protect the constitutional rights, sports, spiritual and cultural congregations (Shraddha Jagaran) etc.
         </p>
 
+
+
         <!-- Mission Section -->
-        <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 30px; margin-top: 50px; background: rgba(255,255,255,0.05); padding: 25px; border-radius: 15px; box-shadow: 0 8px 20px rgba(0,0,0,0.5);">
-            <div style="flex: 1;">
+        <div class="mission">
+            <div>
                 <h2 style="color: #ffcc00;">Our Vision</h2>
                 <p>Self Reliant, Educated, Empowered Janjatis.</p>
-
                 <h2 style="color: #ffcc00;">Our Mission</h2>
                 <p>To empower the Janjati community through education, health, social awareness, cultural preservation, and economic development.</p>
             </div>
-            <div style="flex: 1;">
-                <img src="image/mission.jpeg" alt="Our Mission" style="width:100%; max-width:300px; border-radius: 15px; border: 3px solid #ffcc00; box-shadow: 0 6px 15px rgba(0,0,0,0.7);">
+            <div>
+                <img src="image/mission.jpeg" alt="Our Mission">
             </div>
         </div>
     </div>
@@ -277,20 +358,15 @@ nav a {
 </section>
 
 <!-- WHERE WE WORK -->
-<section id="wherewework" style="padding:40px; background:#f2f2f2;">
-    <h2 style="color:#0077cc; text-align:center;">Where We Work</h2>
-
-    <div style="display:flex; flex-wrap:wrap; gap:40px; justify-content:center; margin-top:30px; align-items:flex-start;">
-        
-        <div style="flex:1; min-width:300px; max-width:450px; text-align:center;">
-            <img src="image/color-map.jpg" alt="India Map"
-            style="width:100%; max-width:400px; height:auto; border-radius:10px; box-shadow:0 0 8px #aaa;">
+<section id="wherewework" style="background:#f2f2f2;">
+    <h2 style="color:#0077cc;">Where We Work</h2>
+    <div class="where-work">
+        <div>
+            <img src="image/color-map.jpg" alt="India Map">
         </div>
-
-        <div style="flex:1; min-width:300px; max-width:450px;">
+        <div>
             <h3 style="text-align:center;">States of India</h3>
-
-            <ul style="columns:2; list-style:none; padding:0; font-size:18px; line-height:1.7;">
+            <ul>
                 <li>AP – Andhra Pradesh</li><li>AR – Arunachal Pradesh</li><li>AS – Assam</li>
                 <li>BR – Bihar</li><li>CG – Chhattisgarh</li><li>GA – Goa</li>
                 <li>GJ – Gujarat</li><li>HR – Haryana</li><li>HP – Himachal Pradesh</li>
@@ -305,7 +381,6 @@ nav a {
         </div>
     </div>
 </section>
-
 
 <!-- FOOTER -->
 <footer>
