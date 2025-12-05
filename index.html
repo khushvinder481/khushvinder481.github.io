@@ -1,380 +1,111 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>      
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Kalyan Ashram Gurgaon - Social NGO</title>
+<!-- ABOUT US SECTION -->
+<section id="about">
+    <div class="container">
+        <h1 style="text-align: center; color: #ffcc00; text-shadow: 1px 1px 5px #000;">About Us</h1>
 
-<style>
-/* General Styles */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background: #f4f4f4;
-    color: #333;
-    overflow-x: hidden;
-}
+        <p>
+            Bharat is a land of unique cultural heritage having diversified nature. It is also a land of hundreds of Janjatis or ‘Vanvasis’. 
+            The Vanavasis find a mention in all ancient scriptures/literatures of our nation. In Ramayana, there are several references like Shabari, Baali, Sugreev etc while Mahabharata have references of Eklavya, Barbarik, Ghatotkacha etc. 
+            There were many Vanavasis who had actively participated in the freedom struggle like Birsa Munda in Ranchi region (Jharkhand State), Raghoji Bhangare in Maharashtra, Thalakkal Chandu in Kerala, Dora Besoyee in Odisha, Tirot Sing Syiem in Meghalaya, Santhal leaders in Bihar (Sidho, Kanho, and Tilka Manjhi), Rani Gaidinliu and Shahid Jadonang of Manipur, Punja Bhil of Rajasthan. Many more are unsung Heroes from among Janjatis who took part in Indian Freedom Movement.
+        </p>
 
-/* ========================================================= */
-/* HEADER (LOGO LEFT, MENU RIGHT)                            */
-/* ========================================================= */
-.header-bar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 12px 20px;
-    background: #ffcc00;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-}
+        <p>
+            Janjatis in our country comprise approximately 10% of total population, spread practically in all the States & Union Territories, 
+            except Haryana, Punjab and Delhi. The peculiarities which set the Vanvasis apart from other citizens are their dresses, traditional adornments, their dialect, folklore and customs, their life style, traditions, their deities, etc. 
+            They have remained backward economically and socially. A stigma and criminality is unfortunately attached with this section of society since generations by some sections of city dwellers. 
+            It is the need of the hour for society to respect Vanvasis and their rich culture.
+        </p>
 
-.header-left {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-}
+        <p>
+            With the inspiration from Thakkar Bappa (Gandhian Leader) in the beginning, Vanvasi Kalyan Ashram was established by 
+            Mr. Ramakant Keshav Deshpande (popularly known as Vanyogi Balasaheb Deshpande), on 26th December 1952 at Jashpur in Madhya Pradesh 
+            (presently in Chhatisgarh) by enrolling 13 children of local Janjatis to start a hostel project.
+        </p>
 
-.header-logo {
-    width: 55px;
-}
+        <p>
+            Encouraged with the success of various projects for the welfare of Janjatis over the period, from 1978, Vanvasi Kalyan Ashram extended its work in every state of India having Janjati population.
+        </p>
 
-.header-title {
-    font-size: 22px;
-    font-weight: bold;
-    color: #4b2e00;
-}
+        <p>
+            Among all the volunteers of Vanvasi Kalyan Ashram, nearly half are from Janjatis. Apart from these, several students, working persons, 
+            professionals, retired persons etc are dedicatedly working for various projects for the Janjatis in the field of education, health, 
+            agriculture, economic development, to protect the constitutional rights, sports, spiritual and cultural congregations (Shraddha Jagaran) etc.
+        </p>
 
-/* NAVIGATION */
-nav .menu {
-    list-style: none;
-    display: flex;
-    gap: 18px;
-    margin: 0;
-}
+        <!-- Mission Section -->
+        <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 30px; margin-top: 50px; background: rgba(255,255,255,0.05); padding: 25px; border-radius: 15px; box-shadow: 0 8px 20px rgba(0,0,0,0.5);">
+            <div style="flex: 1;">
+                <h2 style="color: #ffcc00;">Our Vision</h2>
+                <p>Self Reliant, Educated, Empowered Janjatis.</p>
 
-nav a {
-    color: white;
-    text-decoration: none;
-    padding: 8px 12px;
-    font-weight: bold;
-}
-
-nav .menu li { position: relative; }
-
-/* DROPDOWN */
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background: white;
-    top: 40px;
-    min-width: 180px;
-    box-shadow: 0px 6px 12px rgba(0,0,0,0.2);
-}
-
-.dropdown-content a {
-    color: black;
-    padding: 10px 12px;
-    display: block;
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
-/* ========================================================= */
-/* ROTATING BACKGROUND IMAGES                               */
-/* ========================================================= */
-.bg-rotating-images {
-    position: fixed;
-    inset: 0;
-    z-index: -10;
-    opacity: 0.18;
-    pointer-events: none;
-}
-
-.bg-rotating-images img {
-    position: absolute;
-    width: 280px;
-    border-radius: 12px;
-    opacity: 0.45;
-    animation: slowRotate 35s linear infinite;
-}
-
-.bg-img-1 { top: 8%; left: 5%; transform: rotate(-5deg); }
-.bg-img-2 { top: 22%; right: 5%; transform: rotate(3deg); }
-.bg-img-3 { bottom: 20%; left: 10%; transform: rotate(-3deg); }
-.bg-img-4 { bottom: 10%; right: 12%; transform: rotate(5deg); }
-
-@keyframes slowRotate {
-    from { transform: rotate(0deg); }
-    to   { transform: rotate(360deg); }
-}
-
-/* HERO */
-.hero {
-    height: 300px;
-    background: #333 url("image/4.avif") center/cover no-repeat;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    text-shadow: 2px 2px 5px black;
-}
-
-/* SECTIONS */
-section { padding: 40px; }
-.container { max-width: 1000px; margin: auto; }
-
-/* GRID */
-.grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
-    gap: 20px;
-}
-
-.card {
-    background: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-}
-
-/* ========================================================= */
-/* PREMIUM GALLERY (AUTO-SLIDE + SWIPE + LIGHTBOX)           */
-/* ========================================================= */
-
-.gallery-section {
-    margin-top: 60px;
-}
-
-.slider {
-    position: relative;
-    width: 85%;
-    max-width: 900px;
-    margin: auto;
-    overflow: hidden;
-    border-radius: 12px;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.3);
-}
-
-.slide-track {
-    display: flex;
-    transition: transform 0.7s ease-in-out;
-}
-
-.slide-track img {
-    width: 100%;
-    cursor: pointer;
-}
-
-/* Dots */
-.slider-dots {
-    text-align: center;
-    margin-top: 12px;
-}
-
-.dot {
-    display: inline-block;
-    width: 12px;
-    height: 12px;
-    background: #bbb;
-    border-radius: 50%;
-    margin: 4px;
-    cursor: pointer;
-}
-
-.dot.active { background: #ff8800; }
-
-/* LIGHTBOX */
-.lightbox {
-    position: fixed;
-    inset: 0;
-    background: rgba(0,0,0,0.9);
-    display: none;
-    justify-content: center;
-    align-items: center;
-    z-index: 2000;
-}
-
-.lightbox img {
-    max-width: 90%;
-    max-height: 90%;
-}
-
-.lightbox-close {
-    position: absolute;
-    top: 20px;
-    right: 30px;
-    font-size: 40px;
-    color: white;
-    cursor: pointer;
-}
-
-/* FOOTER */
-footer {
-    background: #e67e22;
-    color: white;
-    padding: 20px;
-    text-align: center;
-}
-</style>
-
-</head>
-<body>
-
-<!-- Rotating Background -->
-<div class="bg-rotating-images">
-    <img src="image/rot1.png" class="bg-img-1">
-    <img src="image/D72_2391_proc.jpg" class="bg-img-2">
-    <img src="image/IMG-20200418-WA0011.jpg" class="bg-img-3">
-    <img src="image/IMG-20200413-WA0027.jpg" class="bg-img-4">
-</div>
-
-<!-- ========================================================= -->
-<!-- HEADER BAR WITH LEFT LOGO + RIGHT MENU                    -->
-<!-- ========================================================= -->
-<div class="header-bar">
-    <div class="header-left">
-        <img src="image/kalyanAshram_logo.png" class="header-logo">
-        <div class="header-title">Kalyan Ashram Gurgaon</div>
-    </div>
-
-    <nav>
-        <ul class="menu">
-            <li class="dropdown">
-                <a href="#about">About Us ▾</a>
-                <ul class="dropdown-content">
-                    <li><a href="governing.html">Governing Body</a></li>
-                    <li><a href="foundation.html">Foundation Stone</a></li>
-                    <li><a href="kalyan.html">कल्याण आश्रम – परिचय</a></li>
-                    <li><a href="project.html">Project At A Glance</a></li>
-                </ul>
-            </li>
-            <li class="dropdown">
-                <a href="#whatwedo">What We Do ▾</a>
-                <ul class="dropdown-content">
-                    <li><a href="education.html">Education</a></li>
-                    <li><a href="hostels.html">Hostels</a></li>
-                    <li><a href="health.html">Health</a></li>
-                    <li><a href="sports.html">Sports</a></li>
-                    <li><a href="woman activity.html">Woman Activity</a></li>
-                </ul>
-            </li>
-            <li><a href="#wherewework">Where We Work</a></li>
-            <li><a href="gallery/index.html">Gallery</a></li>
-            <li><a href="donate.html">Donate</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="donar.html">Donor List</a></li>
-            <li><a href="hindi.html">हिंदी</a></li>
-        </ul>
-    </nav>
-</div>
-
-<!-- HERO -->
-<div class="hero">
-    <h1>Empowering Tribal Communities Across India</h1>
-    <p>Working for education, healthcare, employment & cultural upliftment</p>
-</div>
-
-<!-- (Your other sections stay unchanged: ABOUT, WHAT WE DO, WHERE WE WORK) -->
-
-<!-- ========================================================= -->
-<!-- MODERN PREMIUM GALLERY SECTION (before footer)            -->
-<!-- ========================================================= -->
-
-<section class="gallery-section">
-    <h2 style="color:#ff8800;">Photo Gallery</h2>
-
-    <div class="slider" id="slider">
-        <div class="slide-track" id="slide-track">
-            <img src="image/gallery1.jpg">
-            <img src="image/gallery2.jpg">
-            <img src="image/gallery3.jpg">
-            <img src="image/gallery4.jpg">
+                <h2 style="color: #ffcc00;">Our Mission</h2>
+                <p>To empower the Janjati community through education, health, social awareness, cultural preservation, and economic development.</p>
+            </div>
+            <div style="flex: 1;">
+                <img src="image/mission.jpeg" alt="Our Mission" style="width:100%; max-width:300px; border-radius: 15px; border: 3px solid #ffcc00; box-shadow: 0 6px 15px rgba(0,0,0,0.7);">
+            </div>
         </div>
     </div>
-
-    <div class="slider-dots" id="dots"></div>
-
 </section>
 
-<!-- LIGHTBOX -->
-<div class="lightbox" id="lightbox">
-    <span class="lightbox-close" onclick="closeLightbox()">×</span>
-    <img id="lightbox-img">
+<!-- WHAT WE DO -->
+<section id="whatwedo">
+<div class="container">
+<h2>What We Do</h2>
+<div class="grid">
+<div class="card"><h3>Education</h3><p>Scholarships, hostels, coaching centers.</p></div>
+<div class="card"><h3>Health</h3><p>Medical camps, nutrition support, rural health services.</p></div>
+<div class="card"><h3>Livelihood</h3><p>Skill training, women empowerment programs.</p></div>
+<div class="card"><h3>Environment</h3><p>Tree plantation & awareness campaigns.</p></div>
 </div>
+</div>
+</section>
 
-<!-- FOOTER -->
-<footer>
-    <p>© 2025 Vansawasi Kalyan Ashram | All Rights Reserved</p>
-</footer>
+<!-- WHERE WE WORK -->
+<section id="wherewework" style="padding:40px; background:#f2f2f2;">
+    <h2 style="text-align:center; color:#0077cc;">Where We Work</h2>
 
-<script>
-/* ========================================================= */
-/* SLIDER + AUTO SLIDE + DOTS + SWIPE + LIGHTBOX             */
-/* ========================================================= */
+    <div style="display:flex; flex-wrap:wrap; gap:40px; justify-content:center; margin-top:30px;">
+        <div style="flex:1; min-width:350px; max-width:600px;">
+           <img src="https://i.ibb.co/7X6yLZp/india-colored.png"
+     alt="India Map"
+     style="width:100%; height:auto; border-radius:10px; box-shadow:0 0 8px #aaa;">
+        </div>
 
-const track = document.getElementById("slide-track");
-const slides = track.children;
-const dotsContainer = document.getElementById("dots");
-let index = 0;
+        <div style="flex:1; min-width:300px;">
+            <h3 style="text-align:center; margin-bottom:15px;">States of India</h3>
 
-/* Create dots */
-for (let i = 0; i < slides.length; i++) {
-    let dot = document.createElement("span");
-    dot.className = "dot";
-    dot.onclick = () => goToSlide(i);
-    dotsContainer.appendChild(dot);
-}
-
-function updateDots() {
-    [...dotsContainer.children].forEach((d, i) => {
-        d.classList.toggle("active", i === index);
-    });
-}
-
-function goToSlide(i) {
-    index = i;
-    track.style.transform = `translateX(${-index * 100}%)`;
-    updateDots();
-}
-
-function autoSlide() {
-    index = (index + 1) % slides.length;
-    goToSlide(index);
-}
-
-setInterval(autoSlide, 4000);
-updateDots();
-
-/* Swipe Support */
-let startX = 0;
-
-track.addEventListener("touchstart", e => startX = e.touches[0].clientX);
-track.addEventListener("touchend", e => {
-    let endX = e.changedTouches[0].clientX;
-    if (startX - endX > 50) goToSlide((index + 1) % slides.length);
-    if (endX - startX > 50) goToSlide((index - 1 + slides.length) % slides.length);
-});
-
-/* LIGHTBOX */
-const lightbox = document.getElementById("lightbox");
-const lightboxImg = document.getElementById("lightbox-img");
-
-[...slides].forEach(img => {
-    img.onclick = () => {
-        lightbox.style.display = "flex";
-        lightboxImg.src = img.src;
-    };
-});
-
-function closeLightbox() {
-    lightbox.style.display = "none";
-}
-</script>
-
-</body>
-</html>
+            <ul style="columns:2; list-style:none; padding:0; font-size:18px; line-height:1.7;">
+                <li>AP – Andhra Pradesh</li>
+                <li>AR – Arunachal Pradesh</li>
+                <li>AS – Assam</li>
+                <li>BR – Bihar</li>
+                <li>CG – Chhattisgarh</li>
+                <li>GA – Goa</li>
+                <li>GJ – Gujarat</li>
+                <li>HR – Haryana</li>
+                <li>HP – Himachal Pradesh</li>
+                <li>JH – Jharkhand</li>
+                <li>JK – Jammu & Kashmir</li>
+                <li>KA – Karnataka</li>
+                <li>KL – Kerala</li>
+                <li>MP – Madhya Pradesh</li>
+                <li>MH – Maharashtra</li>
+                <li>MN – Manipur</li>
+                <li>ML – Meghalaya</li>
+                <li>MZ – Mizoram</li>
+                <li>NL – Nagaland</li>
+                <li>OD – Odisha</li>
+                <li>PB – Punjab</li>
+                <li>RJ – Rajasthan</li>
+                <li>SK – Sikkim</li>
+                <li>TN – Tamil Nadu</li>
+                <li>TS – Telangana</li>
+                <li>TR – Tripura</li>
+                <li>UP – Uttar Pradesh</li>
+                <li>UK – Uttarakhand</li>
+                <li>WB – West Bengal</li>
+            </ul>
+        </div>
+    </div>
+</section>
