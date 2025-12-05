@@ -97,6 +97,94 @@ footer {
     <img src="image/kalyanAshram_logo.png" alt="Logo">
     <h1>Kalyan Ashram Gurgaon</h1>
 </header>
+<!-- NAVIGATION -->
+<nav>
+    <ul class="menu">
+         <li class="dropdown">
+        <a href="#about">About Us▾</a>
+           <ul class="dropdown-content">
+                <li><a href="governing.html">Governing Body</a></li>
+                <li><a href="foundation.html">Foundation Stone</a></li>
+                <li><a href="kalyan.html">कल्याण आश्रम –परिचय</a></li>
+                <li><a href="project.html">Project At A Glance</a></li>
+            </ul>
+        </li>   
+        
+        <li class="dropdown">
+            <a href="#whatwedo">What We Do ▾</a>
+            <ul class="dropdown-content">
+                <li><a href="education.html">Education</a></li>
+                <li><a href="hostels.html">Hostels</a></li>
+                <li><a href="health.html">Health</a></li>
+                <li><a href="sports.html">Sports</a></li>
+                <li><a href="woman activity.html">Woman Activity</a></li>
+            </ul>
+        </li>
+
+        <li><a href="#wherewework">Where We Work</a></li>
+        <li><a href="gallery/index.html">Gallery</a></li>
+        <li><a href="donate.html">Donate</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="donar.html">Donor List</a></li>
+        <li><a href="hindi.html">हिंदी</a></li>
+    </ul>
+</nav>
+
+<style>
+    
+nav {
+    background: #ffcc00; /* Yellow color */
+    padding: 10px;
+}
+    nav .menu {
+        list-style: none;
+        display: flex;
+        gap: 20px;
+        margin: 0;
+        padding: 0;
+    }
+
+    nav .menu li {
+        position: relative;
+    }
+
+    nav a {
+        color: white;
+        text-decoration: none;
+        padding: 8px 12px;
+        display: block;
+        font-weight: 600;
+        font-family: Arial, sans-serif;
+    }
+
+    /* Dropdown hidden by default */
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        top: 40px;
+        left: 0;
+        background: #fff;
+        min-width: 180px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        border-radius: 4px;
+        z-index: 10;
+    }
+
+    .dropdown-content li a {
+        color: #333;
+        padding: 10px;
+    }
+
+    .dropdown-content li a:hover {
+        background: #f0f0f0;
+    }
+
+    /* Show dropdown when hovering */
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+</style>
+
 
 <!-- HERO IMAGE SLIDER -->
 <div class="hero">
