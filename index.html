@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>      
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Kalyan Ashram Gurgaon - Social NGO</title>
 <style>
 /* General Styles */
@@ -95,9 +95,69 @@ footer {
     padding: 20px;
     margin-top: 40px;
 }
+
+/* Image wrapper & rotation */
+.image-wrapper {
+    text-align: center;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.rotated-image {
+    max-width: 300px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.rotate-1 { transform: rotate(-5deg); }
+.rotate-2 { transform: rotate(3deg); }
+.rotate-3 { transform: rotate(-3deg); }
+.rotate-4 { transform: rotate(5deg); }
+
+.rotated-image:hover {
+    transform: rotate(0deg);
+}
 </style>
 </head>
 <body>
+
+<header>
+    <img src="logo.png" alt="Vanvasi Kalyan Ashram Logo" />
+    <nav>
+        <a href="#">ABOUT US</a>
+        <a href="#">PROJECTS</a>
+        <a href="#">GET INVOLVED</a>
+        <a href="#">CONTACT US</a>
+        <a href="#">BLOG</a>
+        <a href="#" style="background:#ff6600; color:#fff; border-radius:4px;">DONATE NOW</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h1>Vanvasi Kalyan Ashram</h1>
+    <p>“तू–मैं, एक रक्त !”</p>
+</section>
+
+<section>
+    <div class="container">
+        <h2>Our Work</h2>
+        <div class="image-wrapper">
+            <!-- Uploaded image -->
+            <img src="/mnt/data/64047f95-fed3-4ec8-81be-5fe95c9026cc.png" alt="Vanvasi Kalyan Ashram" class="rotated-image rotate-1" />
+            
+            <!-- Other images (replace paths with actual URLs or paths) -->
+            <img src="image/D72_2391_proc.jpg" alt="Image D72_2391_proc" class="rotated-image rotate-2" />
+            <img src="image/IMG-20200418-WA0011.jpg" alt="Image IMG-20200418-WA0011" class="rotated-image rotate-3" />
+            <img src="image/IMG-20200413-WA0027.jpg" alt="Image IMG-20200413-WA0027" class="rotated-image rotate-4" />
+        </div>
+    </div>
+</section>
 
 <!-- HEADER -->
 <header>
